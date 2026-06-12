@@ -12,3 +12,9 @@ The up and down arrow keys perform a different function by letting users cycle t
 
 > [!NOTE]
 > The terminal stores a substantial history of commands that can go back several days, though this history is eventually cleared over time.
+
+## Command-line Arguments
+
+Most command-line interactions follow a consistent formula where a command name is followed by optional options and arguments. Arguments, which are also referred to as parameters or operands, are specific values that users provide for a command to work with or act upon.
+
+When a command accepts multiple arguments, each value must be separated by a space. The order of these arguments is highly important because the system expects them in a specific sequence. For instance, the `ncal` command can accept both a month and a year as arguments, such as `ncal July 1969`. However, reversing this order to `ncal 1969 July` will cause an error because the program is programmed to process the month first and the year second.
