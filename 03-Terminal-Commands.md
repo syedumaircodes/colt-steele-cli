@@ -15,6 +15,8 @@ The up and down arrow keys perform a different function by letting users cycle t
 
 ## Command-line Arguments
 
-Most command-line interactions follow a consistent formula where a command name is followed by optional options and arguments. Arguments, which are also referred to as parameters or operands, are specific values that users provide for a command to work with or act upon.
+Command-line syntax usually follows a basic template, you type the command, add some options, and then hand over the arguments that tell the command to the file or whatever target you want the command to actually act on.
 
-When a command accepts multiple arguments, each value must be separated by a space. The order of these arguments is highly important because the system expects them in a specific sequence. For instance, the `ncal` command can accept both a month and a year as arguments, such as `ncal July 1969`. However, reversing this order to `ncal 1969 July` will cause an error because the program is programmed to process the month first and the year second.
+If you are passing multiple arguments, you separate them with spaces. The catch is that the order almost always matters. The command expects its inputs in a very specific sequence, and it will get confused if you mix them up.
+
+The `ncal` command, which displays a calendar. If you want to see July of 1969, you would type `ncal July 1969`. But if you swap them and type `ncal 1969 July`, the command will fail.
